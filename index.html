@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz de Mensajería</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="input-field">
+            <label for="input-text">Ingrese el texto aquí:</label>
+            <input type="text" id="input-text" placeholder="Ingrese el texto aquí">
+        </div>
+        <div class="illustration">
+            <img src="./img/persona_encriptada.png" alt="Ilustración de persona">
+            <p id="lblVacio" disabled></p>
+        </div>
+        <div class="input-field">
+            <label for="decrypt-text">Ingresa el texto que desees escribir o desencriptar:</label>
+            <input type="text" id="decrypt-text" placeholder="Ingresa el texto que desees escribir o desencriptar" readonly>
+        </div>
+        <div class="buttons">
+            <button onclick="btnEncriptar()" class="encrypt">Encriptar</button>
+            <button onclick="btnDesencriptar()" class="decrypt">Desencriptar</button>
+        </div>
+    </div>
+
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
